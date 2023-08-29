@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+}
+#winner{
+    display: inline-flex;
+}
+#winner img{
+    width: 10vw;
+}
+#result h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10vw;
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+}
+#result{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vw;
+    background-color: rgba(91, 86, 88, 0.227);
+}
+#result button{ 
+    pointer-events: auto;
+    position: absolute;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+    width: 15vw;
+    height: 5vw;
+    translate: 0 15vw;
+}
+#result_text{
+    display: flex;
+}
+
+
+#result{
+    display: none;
+}

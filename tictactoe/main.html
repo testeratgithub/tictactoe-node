@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tac Toe</title>
+    <style>
+        @font-face {
+            font-family: "custom";
+            src: url("styles/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf") format('TrueType');
+        }
+    </style>
+    <link rel="stylesheet" href="styles/start.css">
+    <link rel="stylesheet" href="styles/ms.css">
+    <link rel="stylesheet" href="styles/ms1.css">
+    <link rel="stylesheet" href="styles/player_stats.css">
+    <link rel="stylesheet" href="styles/result.css">
+    <script src="script/game.js"></script>
+</head>
+<body>
+    <!-- testing result checker -->
+    <p id="result1" style="position: absolute;pointer-events: auto;top: 0%;left: 0%;display:none;">Not yet</p>
+    <!-- Initial page -->
+    <div id="start">
+        <h1>Tic Tac Toe game</h1>
+        <div class="start_option">
+            <p>Start with</p>
+            <div class="start_btns">
+                <button class="start_btn" onclick="init_game(1)"><img class="x" src="resources/images/X1.png" alt="x"></button>
+                <button class="start_btn" onclick="init_game(0)"><img class="o" src="resources/images/O1.png" alt="o"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Game screen  Theme 1-->
+    <div id="gv">
+        <table>
+            <tr aria-rowcount="1">
+                <td aria-colcount="1" data-value=""></td>
+                <td aria-colcount="2"></td>
+                <td aria-colcount="3"></td>
+            </tr>
+            <tr aria-rowcount="2"></tr>
+                <td aria-colcount="1"></td>
+                <td aria-colcount="2"><!--<img class="o" src="resources/images/O1.png" alt="o">--></td>
+                <td aria-colcount="3"><!--<img class="x" src="resources/images/X1.png" alt="x">--></td>
+            </tr>
+            <tr aria-rowcount="3">
+                <td aria-colcount="1"></td>
+                <td aria-colcount="2"></td>
+                <td aria-colcount="3"></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Strike animation-->
+    <div id="strike"><div id="strike_progress"></div></div>
+    <!-- Game screen Theme 2 -->
+    <div class="gv1">
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+    </div>
+    <!-- result screen -->
+    <div id="result">
+        <h3 id="result_text"><p id="winner"><img class="o" src="resources/images/O1.png" alt="o"></p> Wins</h3>
+        <button id="continue" type="button">Continue</button>
+    </div>
+    <!-- player_stats -->
+    <div id="player_stats">
+
+    </div>
+</body>
+</html>

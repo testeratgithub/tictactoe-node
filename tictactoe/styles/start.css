@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+    /* border: 1px solid red; */
+}
+img.x{
+    width: 80px;
+}
+img.o{
+    width: 90px;
+}
+.start_option p{
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 20px;
+    width: fit-content;
+    margin: 2px auto;
+}
+#start h1{
+    color: black;
+    font-family: custom;
+    font-size: 10vw;
+    margin-bottom: 5vh;
+}
+.start_btns{
+    margin: 5px auto;
+    width: 210px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.start_btn{
+    pointer-events: auto;
+    border: none;
+    background-color: transparent;
+}
+button.start_btn:hover{
+    scale: 1.1;
+}
+
+/* #start{
+    display: none;
+} */

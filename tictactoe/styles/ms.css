@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(94, 91, 91, 0.168);
+}
+#gv{
+    width: fit-content;
+    background-color: transparent;
+}
+img.x{
+    width: 80px;
+}
+img.o{
+    width: 90px;
+}
+td{
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border: 4px solid black;
+    background-color: transparent;
+}
+tr:first-child td{
+    border-top-color: transparent;
+}
+tr:last-child td{
+    border-bottom-color: transparent;
+}
+td:first-child{
+    border-left-color: transparent;
+}
+td:last-child{
+    border-right-color: transparent;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{ 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "custom";
+    font-size: 90px;
+    color: rgb(183, 23, 23);
+    pointer-events: auto;
+}
+/* td:hover{
+    background-color: rgba(94, 91, 91, 0.168);
+    off-temporarily - check latter
+} */
+td.entered{
+    pointer-events: none;
+}
+
+
+/* strike out */
+
+#strike{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 20px;
+    background-color: transparent;   
+}
+#strike_progress{
+    background-color: black;
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    animation-name: win_strike_result;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+@keyframes win_strike_result{
+    0%   {width:0px;}
+    25%  {width: 100px;}
+    50%  {width: 200px;}
+    100% {width: 300px;}
+}
+
+
+
+/* INitialization */
+#gv,#strike{
+    display: none;
+}
